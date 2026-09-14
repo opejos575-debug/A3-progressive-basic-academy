@@ -1,0 +1,511 @@
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #1a5f7a;
+    --secondary: #57cc99;
+    --accent: #ff9a3c;
+    --light: #f8f9fa;
+    --dark: #2d3436;
+    --gray: #6c757d;
+    --border: #eaecf0;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    line-height: 1.6;
+    color: var(--dark);
+    overflow-x: hidden;
+}
+/* =========================================================
+   APPLICATION SUBMITTED PAGE
+   A3 PROGRESSIVE BASIC ACADEMY
+   ========================================================= */
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* BODY */
+body {
+    font-family: "Inter", Arial, sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(
+        135deg,
+        #eefaff 0%,
+        #ffffff 50%,
+        #effff7 100%
+    );
+    color: #2d3436;
+}
+
+
+/* =========================================================
+   SUCCESS PAGE
+   ========================================================= */
+
+.success-page {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 30px 20px;
+
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* Decorative circle - left */
+.success-page::before {
+    content: "";
+
+    position: absolute;
+
+    width: 350px;
+    height: 350px;
+
+    background: #57cc99;
+
+    border-radius: 50%;
+
+    opacity: 0.10;
+
+    top: -150px;
+    left: -150px;
+}
+
+
+/* Decorative circle - right */
+.success-page::after {
+    content: "";
+
+    position: absolute;
+
+    width: 320px;
+    height: 320px;
+
+    background: #1a5f7a;
+
+    border-radius: 50%;
+
+    opacity: 0.08;
+
+    right: -130px;
+    bottom: -130px;
+}
+
+
+/* =========================================================
+   SUCCESS CONTAINER
+   ========================================================= */
+
+.success-container {
+    width: 100%;
+    max-width: 650px;
+
+    position: relative;
+    z-index: 2;
+
+    text-align: center;
+
+    background: rgba(255, 255, 255, 0.97);
+
+    padding: 55px 45px;
+
+    border-radius: 30px;
+
+    border: 1px solid #edf1f3;
+
+    box-shadow:
+        0 25px 70px rgba(0, 0, 0, 0.12);
+
+    animation: successAppear 0.7s ease;
+}
+
+
+/* =========================================================
+   SCHOOL LOGO
+   ========================================================= */
+
+.success-logo {
+    width: 110px;
+    height: 110px;
+
+    margin: 0 auto 25px;
+
+    border-radius: 50%;
+
+    overflow: hidden;
+
+    background: white;
+
+    border: 6px solid white;
+
+    box-shadow:
+        0 10px 30px rgba(26, 95, 122, 0.20);
+}
+
+
+.success-logo img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* =========================================================
+   SUCCESS CHECK ICON
+   ========================================================= */
+
+.success-icon {
+    width: 90px;
+    height: 90px;
+
+    margin: 0 auto 25px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(
+        135deg,
+        #57cc99,
+        #2fb879
+    );
+
+    color: white;
+
+    border-radius: 50%;
+
+    font-size: 40px;
+
+    box-shadow:
+        0 15px 35px rgba(87, 204, 153, 0.30);
+
+    animation: successPulse 2s infinite;
+}
+
+
+/* =========================================================
+   HEADING
+   ========================================================= */
+
+.success-container h1 {
+    margin-bottom: 15px;
+
+    color: #1a5f7a;
+
+    font-size: 38px;
+
+    font-weight: 800;
+
+    line-height: 1.2;
+}
+
+
+/* =========================================================
+   GENERAL TEXT
+   ========================================================= */
+
+.success-container p {
+    max-width: 520px;
+
+    margin: 0 auto 12px;
+
+    color: #68737d;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+}
+
+
+/* Main success message */
+.success-message {
+    color: #2d3436 !important;
+
+    font-size: 17px !important;
+
+    font-weight: 600;
+
+    margin-bottom: 15px !important;
+}
+
+
+/* School name */
+.school-name {
+    color: #1a5f7a;
+
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   INFORMATION BOX
+   ========================================================= */
+
+.success-info {
+    margin: 30px 0;
+
+    padding: 20px;
+
+    border-radius: 15px;
+
+    background: linear-gradient(
+        135deg,
+        #f1fbff,
+        #f3fff9
+    );
+
+    border-left: 5px solid #57cc99;
+}
+
+
+.success-info p {
+    margin: 0;
+
+    font-size: 14px;
+
+    color: #5f6b73;
+}
+
+
+.success-info i {
+    color: #57cc99;
+
+    margin-right: 7px;
+}
+
+
+/* =========================================================
+   BACK TO HOME BUTTON
+   ========================================================= */
+
+.back-home-btn {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    min-width: 190px;
+
+    padding: 15px 28px;
+
+    background: linear-gradient(
+        135deg,
+        #1a5f7a,
+        #57cc99
+    );
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 12px;
+
+    font-size: 15px;
+
+    font-weight: 800;
+
+    box-shadow:
+        0 10px 25px rgba(26, 95, 122, 0.22);
+
+    transition: all 0.3s ease;
+}
+
+
+/* Button hover */
+.back-home-btn:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 15px 35px rgba(26, 95, 122, 0.30);
+
+    background: linear-gradient(
+        135deg,
+        #57cc99,
+        #1a5f7a
+    );
+}
+
+
+/* Arrow animation */
+.back-home-btn i {
+    transition: transform 0.3s ease;
+}
+
+
+.back-home-btn:hover i {
+    transform: translateX(-5px);
+}
+
+
+/* =========================================================
+   CONTACT TEXT
+   ========================================================= */
+
+.success-contact {
+    margin-top: 25px !important;
+
+    margin-bottom: 0 !important;
+
+    color: #8a949c !important;
+
+    font-size: 13px !important;
+}
+
+
+.success-contact strong {
+    color: #1a5f7a;
+}
+
+
+/* =========================================================
+   SUCCESS APPEAR ANIMATION
+   ========================================================= */
+
+@keyframes successAppear {
+
+    0% {
+        opacity: 0;
+        transform: translateY(35px) scale(0.96);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+
+}
+
+
+/* =========================================================
+   SUCCESS ICON ANIMATION
+   ========================================================= */
+
+@keyframes successPulse {
+
+    0% {
+        box-shadow:
+            0 0 0 0 rgba(87, 204, 153, 0.35);
+    }
+
+    70% {
+        box-shadow:
+            0 0 0 18px rgba(87, 204, 153, 0);
+    }
+
+    100% {
+        box-shadow:
+            0 0 0 0 rgba(87, 204, 153, 0);
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .success-container {
+        max-width: 600px;
+
+        padding: 45px 30px;
+    }
+
+    .success-container h1 {
+        font-size: 32px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .success-page {
+        padding: 20px 15px;
+    }
+
+
+    .success-container {
+        padding: 40px 22px;
+
+        border-radius: 22px;
+    }
+
+
+    .success-logo {
+        width: 90px;
+        height: 90px;
+    }
+
+
+    .success-icon {
+        width: 75px;
+        height: 75px;
+
+        font-size: 32px;
+    }
+
+
+    .success-container h1 {
+        font-size: 28px;
+    }
+
+
+    .success-container p {
+        font-size: 13px;
+    }
+
+
+    .success-message {
+        font-size: 15px !important;
+    }
+
+
+    .success-info {
+        padding: 16px;
+    }
+
+
+    .success-info p {
+        font-size: 12px;
+    }
+
+
+    .back-home-btn {
+        width: 100%;
+
+        padding: 14px 20px;
+
+        font-size: 14px;
+    }
+
+
+    .success-contact {
+        font-size: 12px !important;
+    }
+
+}
